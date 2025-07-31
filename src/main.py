@@ -23,7 +23,12 @@ def get_glb_model(elementName: str) -> str:
 def main() -> None:
     oxygen_path = get_glb_model("Oxygen")
     mesh = trimesh.load(oxygen_path)
-    mesh.show()
+    if isinstance(mesh, trimesh.Trimesh):
+        scene = mesh.scene()
+    else:
+        scene = mesh
+    scene.background = [0, 0, 0, 255]  # type: ignore[attr-defined]
+    scene.show()
 
 
 if __name__ == "__main__":
