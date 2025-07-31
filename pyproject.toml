@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "mypy>=1.17.0",
-    "pyglet>=2.1.6",
+    "pyglet<2",
     "requests>=2.32.4",
     "trimesh>=4.7.1",
 ]
