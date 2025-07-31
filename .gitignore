@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Models and Images
+assets/images/
+assets/models/

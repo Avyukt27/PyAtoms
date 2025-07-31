@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "mypy>=1.17.0",
     "pyglet<2",
+    "pyvista>=0.45.3",
     "requests>=2.32.4",
     "trimesh>=4.7.1",
 ]
